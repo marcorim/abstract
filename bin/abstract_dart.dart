@@ -13,6 +13,12 @@ class PersonA implements Person{
   void printName() {
     print('Person A');
   }
+
+  @override
+  String toString() {
+    // TODO: implement toString
+    return super.toString();
+  }
 }
 
 class PersonB extends Person{
@@ -32,3 +38,5 @@ class PersonC extends Person{
 void printName(Person person) {
   person.printName();
 }
+
+
