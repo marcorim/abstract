@@ -1,6 +1,7 @@
 void main(List<String> arguments) {
   printName(PersonA());
   printName(PersonB());
+    printName(PersonC());
 }
 
 abstract class Person{
@@ -18,6 +19,13 @@ class PersonB extends Person{
   @override
   void printName() {
     print('Person B');
+  }
+}
+
+class PersonC extends Person{
+  @override
+  void printName() {
+    print('Person C');
   }
 }
 
